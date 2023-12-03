@@ -3,10 +3,16 @@
 	"editor.codeActionsOnSave": ["addMissingImports", "source.organizeImports", "source.fixAll"],
 	"editor.formatOnSave": true,
 	"eslint.validate": ["javascript", "typescript", "svelte"],
+	"editor.quickSuggestions": {
+		"strings": "on"
+	},
 	"prettier.documentSelectors": ["**/*.svelte", "**/*.ts"],
 	"svelte.enable-ts-plugin": true,
 	"typescript.tsdk": "node_modules/typescript/lib",
 	"tailwindCSS.classAttributes": ["class", "className", "ngClass"],
+	"tailwindCSS.includeLanguages": {
+		"svelte": "svelte"
+	},
 	"files.associations": {
 		"*.css": "tailwindcss"
 	},

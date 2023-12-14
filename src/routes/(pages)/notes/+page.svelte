@@ -1,4 +1,8 @@
 <script lang="ts">
-	import { pageTitle } from '$lib/stores';
-	$pageTitle = 'Notes';
+	import { Page } from '$lib/components';
+	import { Button } from 'flowbite-svelte';
 </script>
+
+<Page title="Notes">
+	<Button href="notes/new">New</Button>
+</Page>

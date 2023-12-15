@@ -1,10 +1,19 @@
-<script>
-	import { Alert } from 'flowbite-svelte';
+<script lang="ts">
+	import { ThemeSupa } from '@supabase/auth-ui-shared';
+	import { Auth } from '@supabase/auth-ui-svelte';
+
+	export let data;
 </script>
 
-<div class="p-8">
-	<Alert>
-		<span class="font-medium">Info alert!</span>
-		Change a few things up and try submitting again.
-	</Alert>
-</div>
+<svelte:head>
+	<title>User Management</title>
+</svelte:head>
+
+<Auth
+	socialLayout="horizontal"
+	supabaseClient={data.supabase}
+	view="magic_link"
+	redirectTo={`${data.url}/auth/callback`}
+	showLinks={false}
+	appearance={{ theme: ThemeSupa, style: { input: 'color: #fff' } }}
+/>

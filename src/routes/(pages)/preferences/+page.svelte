@@ -1,8 +1,8 @@
 <script lang="ts">
-	import { pageTitle } from '$lib/stores';
+	import { Page } from '$lib/components';
 	import { DarkMode } from 'flowbite-svelte';
-	import '../../../app.pcss';
-	$pageTitle = 'Preferences';
 </script>
 
-<DarkMode />
+<Page title="Preferences">
+	<DarkMode />
+</Page>

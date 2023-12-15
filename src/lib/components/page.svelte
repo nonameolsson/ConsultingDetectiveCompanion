@@ -2,6 +2,7 @@
 	import { BottomNavigation } from '$lib/components';
 	import { Heading, Navbar } from 'flowbite-svelte';
 	export let title = '';
+	export let padding = true;
 </script>
 
 <div class="flex flex-col h-full">
@@ -16,7 +17,7 @@
 		</div>
 	</Navbar>
 
-	<div class="p-4 overflow-y-scroll h-full">
+	<div class="py-4 overflow-y-scroll h-full" class:p-4={padding}>
 		<slot />
 	</div>
 

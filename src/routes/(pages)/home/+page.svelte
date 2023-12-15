@@ -1,19 +1,19 @@
 <script lang="ts">
-	import { pageTitle } from '$lib/stores';
+	import { Page } from '$lib/components';
 	import { Skeleton } from 'flowbite-svelte';
-
-	$pageTitle = 'Home';
 </script>
 
-<Skeleton />
-<Skeleton />
-<Skeleton />
-<Skeleton />
-<Skeleton />
-<Skeleton />
-<Skeleton />
-<Skeleton />
-<Skeleton />
-<Skeleton />
-<Skeleton />
-Hej!
+<Page title="New note">
+	<Skeleton />
+	<Skeleton />
+	<Skeleton />
+	<Skeleton />
+	<Skeleton />
+	<Skeleton />
+	<Skeleton />
+	<Skeleton />
+	<Skeleton />
+	<Skeleton />
+	<Skeleton />
+	Hej!
+</Page>
